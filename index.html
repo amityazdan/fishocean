@@ -1,14 +1,87 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fish Ocean — Support</title><link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png"></head><body><main>
-<header><img src="icon.png" alt=""><div><h1>Fish Ocean</h1><p class="sub">A living reef on your Mac desktop</p></div></header>
-<div class="card"><strong>Need help?</strong> Email <a href="mailto:amyzdevelopment@gmail.com">amyzdevelopment@gmail.com</a> — we usually answer within two days.</div>
-<h2>Frequently asked</h2>
-<p><strong>Where is the app?</strong> Fish Ocean lives behind your windows. Find its 🐠 icon in the menu bar at the top of the screen for all options.</p>
-<p><strong>Will it slow my Mac down?</strong> No. The art is pre-rendered, it lowers its frame rate on battery and pauses completely when your desktop is covered.</p>
-<p><strong>Is my fish saved?</strong> Yes. Its size, age and journal are kept on your Mac, even after restarting.</p>
-<p><strong>How do I swim with a friend?</strong> You both need to be signed in to iCloud. Open the 🐠 menu → <em>My Friend Code</em>, send the code to your friend, and they choose <em>Add Friend…</em>. With the full ocean unlock you can then pick <em>Invite … to swim</em>; your friend can accept even on the free version.</p>
-<p><strong>My friends can't connect.</strong> Friends meet over the internet (iCloud and a secure web connection). Some strict office or school networks block this; your fish keeps working normally, and the 🐠 menu tells you when friends can't be reached. Try again from another network.</p>
-<p><strong>I bought the full ocean on another Mac.</strong> Choose <em>Restore purchase</em> in the 🐠 menu.</p>
-<p><strong>Start at login</strong> can be turned on or off in the 🐠 menu.</p>
-<footer><a href="privacy.html">Privacy Policy</a> · © 2026 A.M.Y.Z</footer>
+<title>Fish Ocean: live aquarium wallpaper for Mac</title>
+<meta name="description" content="A clownfish lives in a coral reef behind your windows. A living wallpaper for macOS that follows your time of day. Free on the Mac App Store.">
+<meta property="og:title" content="Fish Ocean: a clownfish lives behind your windows">
+<meta property="og:description" content="A living coral reef for your Mac desktop. Its day follows yours. Free on the Mac App Store.">
+<meta property="og:image" content="https://amityazdan.github.io/fishocean/img/hero-day.jpg">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css"><link rel="icon" href="icon.png">
+<style>
+  main{max-width:880px}
+  .hero{margin:8px 0 28px}
+  .hero img,.hero video{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 10px 30px rgba(0,30,50,.18)}
+  .cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:20px 0 8px}
+  .cta img{height:48px;width:auto;display:block}
+  .cta span{color:var(--muted);font-size:15px}
+  .lead{font-size:20px;line-height:1.5;margin:6px 0 0;color:var(--muted)}
+  h1{font-size:34px;line-height:1.2}
+  section{margin:44px 0}
+  section h2{margin:0 0 6px}
+  section p{margin:0 0 14px}
+  .tag{display:inline-block;font-size:12px;font-weight:600;letter-spacing:.02em;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:1px 9px;margin-left:8px;vertical-align:3px}
+  .row3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+  .row2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .row3 img,.row2 img{width:100%;height:auto;border-radius:10px;display:block}
+  ul.plain{padding-left:20px;margin:0}
+  footer a{color:var(--muted)}
+  .cta .badge-dark{display:none}
+  @media (prefers-color-scheme:dark){.cta .badge-light{display:none}.cta .badge-dark{display:block}}
+  @media (max-width:600px){h1{font-size:28px}.lead{font-size:18px}.row3{grid-template-columns:1fr}.row2{grid-template-columns:1fr}}
+</style></head><body><main>
+
+<header><img src="icon.png" alt=""><div><h1>A clownfish lives behind your windows.</h1></div></header>
+<p class="lead">A living coral reef for your Mac desktop. Its day follows yours.</p>
+
+<div class="cta">
+    <a href="https://apps.apple.com/app/id6816492901" aria-label="Download Fish Ocean on the Mac App Store">
+    <img class="badge-light" src="img/badge-mac-black.svg" alt="Download on the Mac App Store">
+    <img class="badge-dark" src="img/badge-mac-white.svg" alt="Download on the Mac App Store">
+  </a>
+  <span>Free, with a one-time Full Ocean unlock</span>
+</div>
+
+<figure class="hero"><img src="img/hero-day.jpg" alt="A clownfish swimming over a coral reef on a bright turquoise day" width="1600" height="1000"></figure>
+
+<section>
+  <h2>Its day follows yours.</h2>
+  <p>Rosy dawns, bright turquoise days, orange sunsets, moonlit nights with glowing plankton.</p>
+  <div class="row3">
+    <img src="img/day.jpg" alt="The reef on a bright turquoise day" loading="lazy">
+    <img src="img/warm.jpg" alt="The reef in warm, rosy light" loading="lazy">
+    <img src="img/night.jpg" alt="The reef at night with glowing plankton" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2>Set it free <span class="tag">Full Ocean</span></h2>
+  <p>Your fish travels through nine habitats, eats plankton, rests in its anemone, slowly grows, and meets schools of blue tangs.</p>
+  <div class="row3">
+    <img src="img/kelp.jpg" alt="The clownfish swimming through a kelp forest" loading="lazy">
+    <img src="img/anemone.jpg" alt="The clownfish resting in its anemone" loading="lazy">
+    <img src="img/tangs.jpg" alt="A school of blue tangs passing the clownfish" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2>Swim together <span class="tag">Full Ocean</span></h2>
+  <p>Add a friend by code; with Full Ocean you can invite their fish to swim live on both desktops. Your friend doesn't need Full Ocean.</p>
+  </section>
+
+<section>
+  <h2>Light on your Mac.</h2>
+  <p>Lower frame rate on battery, drawing paused when your desktop is covered, live CPU and memory use in Settings. One ocean across all your displays. No ads, no subscription.</p>
+</section>
+
+<div class="cta">
+  <a href="https://apps.apple.com/app/id6816492901" aria-label="Download Fish Ocean on the Mac App Store">
+    <img class="badge-light" src="img/badge-mac-black.svg" alt="Download on the Mac App Store">
+    <img class="badge-dark" src="img/badge-mac-white.svg" alt="Download on the Mac App Store">
+  </a>
+  <span>macOS 13 or later · Apple silicon and Intel</span>
+</div>
+
+<footer>
+  <a href="support.html">Support &amp; FAQ</a> · <a href="privacy.html">Privacy</a> · <a href="press.html">Press kit</a><br>
+  Help: <a href="mailto:amyzdevelopment@gmail.com">amyzdevelopment@gmail.com</a> · © 2026 A.M.Y.Z
+</footer>
 </main></body></html>
