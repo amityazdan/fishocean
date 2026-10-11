@@ -27,7 +27,15 @@
   .cta .badge-dark{display:none}
   @media (prefers-color-scheme:dark){.cta .badge-light{display:none}.cta .badge-dark{display:block}}
   @media (max-width:600px){h1{font-size:28px}.lead{font-size:18px}.row3{grid-template-columns:1fr}.row2{grid-template-columns:1fr}}
-</style></head><body><main>
+</style><style>
+video{display:block;width:100%;height:auto;border-radius:12px;background:#0b3a4f}
+.clip{margin:16px 0 0}.clip figcaption,.clips figcaption{font-size:14px;color:var(--muted);margin-top:6px}
+.clips{margin-top:12px}.clips figure{margin:0}
+</style>
+<script>
+document.addEventListener('DOMContentLoaded',function(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){document.querySelectorAll('video').forEach(function(v){v.removeAttribute('autoplay');v.pause();v.currentTime=0;});}});
+</script>
+</head><body><main>
 
 <header><img src="icon.png" alt=""><div><h1>A clownfish lives behind your windows.</h1></div></header>
 <p class="lead">A living coral reef for your Mac desktop. Its day follows yours.</p>
@@ -40,16 +48,12 @@
   <span>Free, with a one-time Full Ocean unlock</span>
 </div>
 
-<figure class="hero"><img src="img/hero-day.jpg" alt="A clownfish swimming over a coral reef on a bright turquoise day" width="1600" height="1000"></figure>
+<figure class="hero"><video src="img/hero.mp4" poster="img/hero-poster.jpg" width="1600" height="1000" autoplay muted loop playsinline preload="metadata" aria-label="A young clownfish swimming over its home reef: the free version"></video></figure>
 
 <section>
   <h2>Its day follows yours.</h2>
-  <p>Rosy dawns, bright turquoise days, orange sunsets, moonlit nights with glowing plankton.</p>
-  <div class="row3">
-    <img src="img/day.jpg" alt="The reef on a bright turquoise day" loading="lazy">
-    <img src="img/warm.jpg" alt="The reef in warm, rosy light" loading="lazy">
-    <img src="img/night.jpg" alt="The reef at night with glowing plankton" loading="lazy">
-  </div>
+  <p>Rosy dawns, bright turquoise days, orange sunsets, blue nights where the water glows.</p>
+  <figure class="clip"><video src="img/daycycle.mp4" poster="img/daycycle-poster.jpg" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="The reef from dawn through day and sunset to night"></video><figcaption>Dawn to night, sped up (time-lapse)</figcaption></figure>
 </section>
 
 <section>
@@ -60,16 +64,17 @@
     <img src="img/anemone.jpg" alt="The clownfish resting in its anemone" loading="lazy">
     <img src="img/tangs.jpg" alt="A school of blue tangs passing the clownfish" loading="lazy">
   </div>
+  <div class="row3 clips">
+    <figure><video src="img/tangs.mp4" poster="img/tangs-poster.jpg" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="A blue tang school swimming past the clownfish"></video><figcaption>A blue tang school passes</figcaption></figure>
+    <figure><video src="img/rest.mp4" poster="img/rest-poster.jpg" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="The clownfish resting in its anemone"></video><figcaption>Resting in its anemone</figcaption></figure>
+    <figure><video src="img/growth.mp4" poster="img/growth-poster.jpg" width="960" height="600" autoplay muted loop playsinline preload="metadata" aria-label="The clownfish growing up over about two months, sped up"></video><figcaption>Growing up over about two months (time-lapse)</figcaption></figure>
+  </div>
 </section>
 
-<section>
-  <h2>Swim together <span class="tag">Full Ocean</span></h2>
-  <p>Add a friend by code; with Full Ocean you can invite their fish to swim live on both desktops. Your friend doesn't need Full Ocean.</p>
-  </section>
 
 <section>
   <h2>Light on your Mac.</h2>
-  <p>Lower frame rate on battery, drawing paused when your desktop is covered, live CPU and memory use in Settings. One ocean across all your displays. No ads, no subscription.</p>
+  <p>Lower frame rate on battery, pauses when windows cover the desktop, live CPU and memory use in Settings. One ocean across all your displays. No ads, no subscription.</p>
 </section>
 
 <div class="cta">
