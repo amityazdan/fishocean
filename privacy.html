@@ -9,7 +9,7 @@
 <p>From version 1.3, when someone adds your fish's code you get a friend request, and their fish can't visit until you accept. Your friend requests and the fish you remove, decline or block are kept only on your Mac. Fish names that look offensive or contain contact details are shown as “Fish”.</p>
 <p>While fish swim together over the internet, each app sends its fish's position and animation through our relay server (hosted on Cloudflare), which forwards it to the other fish in the same private room. The relay keeps nothing: when a room is empty it is forgotten.</p>
 <h2>Updates</h2>
-<p>From version 1.4.2 (build 16), the Mac app asks Apple's App Store once a day which version of Fish Ocean is current in your country, so it can tell you when an update is out. The request goes straight to Apple and carries no information about you or your fish.</p>
+<p>From version 1.4.2, the Mac app asks Apple's App Store once a day which version of Fish Ocean is current in your country, so it can tell you when an update is out. The request goes straight to Apple and carries no information about you or your fish.</p>
 <h2>On Windows</h2>
 <p>Fish Ocean for Windows works the same way. Your fish and settings are saved only on your PC. Windows PCs can't use iCloud directly, so the Windows app reaches the same Apple CloudKit public database through our own small server on Cloudflare, which passes each request on and stores nothing. To protect your fish code, the app keeps a random secret on your PC; CloudKit stores only a one-way hash of it, so only your app can change your fish's record. The server's logs contain only error types, never names, codes or messages. Live swimming uses the same relay as on the Mac.</p>
 <h2>Purchases</h2>
